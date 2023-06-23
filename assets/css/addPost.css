@@ -1,0 +1,234 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --tertiary-color: #ddd5d5e1;
+    --quaternary-color:  #ddd5d5;
+
+    --navbarBtn: #fff;
+
+    --mediaApp-font: "Dancing_Script";
+}
+.dark-theme
+{
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --tertiary-color: #ddd5d5e1;
+    --quaternary-color:  #ddd5d5;
+}
+body
+{
+    background-color: var(--primary-color);
+}
+
+/* ============================== sidebar ============================= */
+
+.sidebar
+{
+    max-width: 250px;
+    min-width: 250px;
+    background-color: var(--primary-color);
+    transition: all 0.5s;
+    min-height: 100vh;
+    box-shadow: 0px 0px 1px var(--secondary-color);
+}
+.sideBarBtn
+{
+    cursor: pointer;
+    border-radius: 5px; 
+    color: var(--secondary-color);
+}
+.sideBarBtn:hover
+{
+   background-color: var(--tertiary-color);
+   color: var(--secondary-color);
+}
+.sideBarBtn svg
+{
+    fill: var(--secondary-color);
+    width: 12%;
+}
+.sideBarBtn:nth-child(3) svg
+{
+    fill: var(--primary-color);
+    width: 12%;
+}
+.sideBarBtn img
+{
+    width: 12%;
+}
+.sideBarBtn .messaSvg
+{
+    stroke: var(--secondary-color);
+}
+.h3
+{
+    color: var(--secondary-color);
+    font-family: var(--mediaApp-font);
+}
+.dropdown-menu
+{
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+}
+.dropdown-menu a
+{
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.dropdown-menu .dropdown-divider
+{
+    background-color: var(--secondary-color);
+}
+
+/* ============================== navbar ============================= */
+
+nav
+{
+    display: none;
+    visibility: hidden;
+}
+
+/* ============================== content ============================= */
+.content
+{
+    min-height: 100vh;
+    width: 100%;
+}
+.hide
+{
+    display: none;
+}
+
+/* ==============================  ============================= */
+form .imgDiv
+{
+    background-color: var(--tertiary-color);
+    height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    padding-top: 120px;
+    position: relative;
+    overflow: hidden;
+}
+form .imgDiv span
+{
+    opacity: 0.3;
+    color: #000;
+    letter-spacing: 3px;
+    font-size: 17px;
+}
+.postDiv h4
+{
+    color: var(--secondary-color);
+}
+input[type="file"]
+{
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    transform: scale(100);
+}
+form textarea
+{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+    background-color: var(--tertiary-color);
+    width: 100%;
+}
+input[type="submit"]
+{
+    background-color: blue;
+    border-radius: 5px;
+}
+
+/* @@@@@@@@@@@@@@@@@Media@@@@@@@@@@@@@@@@@@@@@@ */
+@media (max-width: 1000px) {
+    /* ============================== sidebar ============================= */
+    .sidebar
+    {
+        max-width: 85px;
+        min-width: 85px;
+        min-height: 100vh;
+    }
+    .sideBarBtn span 
+    {
+       display: none;
+       visibility: hidden;
+    }
+    .sideBarBtn svg
+    {
+        width: 100%;
+    }
+    .sideBarBtn:nth-child(3) svg
+    {
+      width: 100%;
+    }
+    .sideBarBtn img
+    {
+        width: 100%;
+    }
+    .h3
+    {
+        display: none;
+        visibility: hidden;
+    }
+}
+@media (max-width: 776px) {
+    .sidebar
+    {
+        display: none;
+        visibility: hidden;
+    }
+
+    nav
+    {
+      background-color: var(--primary-color);
+      border-top: 1px solid;
+      display: block;
+      visibility: visible;
+    }
+    nav .container
+   {
+     justify-content: space-between;
+   }
+    nav svg
+   {
+     fill: var(--secondary-color);
+     width: 5%;
+     cursor: pointer;
+   }
+    nav img
+    {
+     width: 5%;
+     cursor: pointer;
+    }
+   nav .messaSvg
+   {
+     stroke: var(--secondary-color);
+   }
+}
+@media (max-width: 400px) {
+    .sidebar
+    {
+        display: none;
+        visibility: hidden;
+    }
+
+    nav svg
+    {
+      width: 7%;
+    }
+     nav img
+     {
+      width: 7%;
+     }
+}

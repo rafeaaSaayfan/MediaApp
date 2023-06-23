@@ -1,0 +1,149 @@
+:root
+{
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --tertiary-color: #ddd5d584;
+    --quaternary-color:  #ddd5d5;
+}
+.dark-theme
+{
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --tertiary-color: #ddd5d584;
+    --quaternary-color:  #ddd5d5;
+}
+body
+{
+    background-color: var(--quaternary-color);
+}
+.hide
+{
+    display: none;
+    visibility: hidden;
+}
+/* ======================================== */
+.content
+{
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 1px var(--secondary-color);
+}
+.profImg
+{
+    width: 12%;
+}
+.content span a
+{
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+.svg
+{
+    fill: var(--secondary-color);
+    width: 100%;
+    cursor: pointer;
+}
+.postImg 
+{
+    width: 100%;
+}
+.dropdown-menu
+{
+    background-color: rgb(79, 77, 77);
+    width: 100%;
+}
+.dropdown-menu hr
+{
+    color: var(--secondary-color);
+}
+.dropdown-menu form input[type="submit"] 
+{
+    color: red; 
+    width: 100%; 
+    background-color: transparent;
+}
+.dropdown-menu form input[type="submit"]:hover
+{
+    background-color: var(--tertiary-color);
+}
+.dropdown-menu .editBtn
+{
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+}
+.dropdown-menu .editBtn:hover
+{
+    background-color: var(--tertiary-color);
+}
+.cancelEdit
+{
+    border: none;
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+.svgLikeColor
+{
+    fill: transparent;
+    stroke: var(--secondary-color);
+    cursor: pointer;
+}
+.svgLikedColor
+{
+    fill: red;
+    stroke: red;
+    cursor: pointer;
+}
+.editForm textarea
+{
+   border: 1px solid var(--secondary-color);
+   background-color: var(--primary-color);
+   color: var(--secondary-color);
+   border-radius: 5px;
+   width: 80%;
+}
+.editForm textarea:hover
+{
+   background-color: var(--tertiary-color);
+}
+.editForm input[type="submit"]
+{
+    border: none;
+    background-color: transparent;
+    color: blue;
+}
+.xBtn a 
+{
+    text-decoration: none;
+    color: black;
+}
+.xBtnPhone
+{
+    display: none;
+    visibility: hidden;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media (max-width: 768px) {
+.svg
+{
+    width: 60%;
+}
+.xBtnPhone
+{
+    display: block;
+    visibility: visible;
+}
+.xBtnPhone a 
+{
+    text-decoration: none;
+    color: blue;
+}
+.xBtnPhone a svg
+{
+    width: 60%;
+}
+.xBtn
+{
+   display: none;
+   visibility: hidden;
+}
+}

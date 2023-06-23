@@ -1,0 +1,50 @@
+:root
+{
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --tertiary-color: #ddd5d584;
+    --quaternary-color:  #ddd5d5;
+}
+.dark-theme
+{
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --tertiary-color: #ddd5d584;
+    --quaternary-color:  #ddd5d5;
+}
+body
+{
+    background-color: var(--quaternary-color);
+}
+.hide
+{
+    display: none;
+    visibility: hidden;
+}
+/* ======================================== */
+.content
+{
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 1px var(--secondary-color);
+    min-height: 100vh;
+}
+h3
+{
+    color: var(--secondary-color);
+}
+img
+{
+    width: 80%;
+}
+p, a, svg
+{
+    color: var(--secondary-color);
+}
+a:hover
+{
+    color: var(--secondary-color);
+}
+hr 
+{
+    color: var(--secondary-color);
+}
